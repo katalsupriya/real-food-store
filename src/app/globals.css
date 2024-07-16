@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button:disabled {
+  color: #c2c5c9;
+}
+
+
+@media (min-width:600px) {
+  .dropdown-content::after {
+    bottom: 100%;
+    left: 75%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ffff;
+    border-width: 12px;
+    margin-left: -10px;
+  } 
+}
+
+@media (max-width:600px) {
+  .dropdown-content::after {
+    bottom: 95%;
+    left: 65%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ffff;
+    border-width: 12px;
+    margin-left: -10px;
+  }
+}
